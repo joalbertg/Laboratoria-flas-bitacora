@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flash bitacora</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/css/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="center-align">Flash Bitácora</h1>
+        <div class="row">
+          <div class="col s8 offset-s2">
+            <div class="conatiner-bitacora">
+              <!-- message  -->
+              <div class="card white">
+                <div class="card-content black-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                    little markup to use effectively.</p>
+                </div>
+              </div>
+              <!-- end-message -->
+              <!-- image  -->
+              <div class="card white">
+                <div class="card-content black-text">
+                  <span class="card-title">Card Title</span>
+                  <figure>
+                    <img class="responsive-img" src="./assets/img/test-img.jpg">
+                  </figure>
+                </div>
+              </div>
+              <!-- end-image -->
+              <!-- event  -->
+              <div class="card white">
+                <div class="card-content black-text">
+                  <span class="card-title">Card Title</span>
+                  <p>24/11/2018</p>
+                </div>
+              </div>
+              <!-- end-event -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul id="fab">
+      <li id="add-message">
+        <a class="btn-floating red">
+          <i class="material-icons">insert_comment</i>
+        </a>
+      </li>
+      <li id="add-image">
+        <a class="btn-floating yellow darken-1">
+          <i class="material-icons">photo_library</i>
+        </a>
+      </li>
+      <li id="add-event">
+        <a class="btn-floating green">
+          <i class="material-icons">insert_invitation</i>
+        </a>
+      </li>
+      <li id="add-media">
+        <a class="btn-floating blue">
+          <i class="material-icons">video_library</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <script src="vendors/js/jquery.min.js"></script>
+  <script src="./vendors/css/materialize/js/materialize.min.js"></script>
+  <script src="./js/message.js"></script>
+  <script src="./js/image.js"></script>
+  <script src="./js/event.js"></script>
+  <script src="./js/media.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
